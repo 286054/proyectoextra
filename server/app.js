@@ -1,13 +1,10 @@
-const http = require('http');
+const express = require('express')
+const app = express()
+const path = require('path')
+app.get("",(request,response)=>{
+  return response.sendFile(path.join(__dirname+"./../assets/html/index.html"))
+})
 
-http.createServer((request, response)=>{
-  fs.readFile('index.html',(err, data)=>{
-
-    response.writeHead(200, {"Content-Type": "text/html"});
-    response.write("Text sample de servidor ");
-    if(request.url == "/hola")
-      reponse.write("hola");
-
-  response.end();
-  });
-}).listen(4000);
+app.listen(4000, () => {
+  console.log("Servidor iniciado");
+})
