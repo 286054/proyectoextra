@@ -21,6 +21,6 @@ app.get("/about",(request,response)=>{
   })
 })
 //Puerto de uso
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log("Servidor iniciado");
 })

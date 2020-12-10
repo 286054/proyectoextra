@@ -4,7 +4,7 @@
   "description": "",
   "main": "proyectoextra\\server\\ app.js\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[\u001b[C\u001b\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001bapp.js",
   "scripts": {
-    "start": "supervisor ./server/app.js",
+    "start": "node ./server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
